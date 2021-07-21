@@ -1,0 +1,47 @@
+.product-recommendation {
+  padding-top: 200px;
+
+  @include xs {
+    padding-top: 60px;
+  }
+}
+
+.product-recomm {
+  &__title {
+    margin-bottom: 140px;
+    text-align: center;
+
+    @include xs {
+      margin-bottom: 60px;
+      font-size: 22px;
+    }
+  }
+
+  &__slider {
+    overflow: hidden;
+    margin-bottom: 170px;
+
+    @include xs {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__slide {
+    width: 19%;
+  }
+}
+
+.card {
+  &__image {
+    margin-bottom: 12px;
+  }
+
+  &__title {
+    margin-bottom: 12px;
+    font-weight: 400;
+  }
+
+  &__price {
+    font-weight: 700;
+  }
+}

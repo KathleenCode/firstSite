@@ -1,0 +1,162 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 30px;
+
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 144px;
+    border-top: 1px solid var(--color-gray);
+    padding-top: 60px;
+
+    @include lg {
+      margin-bottom: 80px;
+    }
+
+    @include xs {
+      flex-direction: column;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 14px;
+    }
+  }
+
+  &__link {
+    transition: 0.2s;
+
+    &:focus {
+      opacity: 0.59;
+    }
+
+    &:active {
+      color: var(--color-accent);
+      opacity: 1;
+    }
+
+    @include desktop {
+      &:hover {
+        opacity: 0.59;
+      }
+    }
+  }
+
+  &__column {
+    flex: 0 1 auto;
+
+    @include lg {
+      flex: 1 1 50%;
+      margin-bottom: 80px;
+      padding: 0 20px;
+
+      &:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+
+        @include xs {
+          margin-bottom: 60px;
+        }
+      }
+
+      @include xs {
+        padding: 0;
+      }
+    }
+  }
+
+  .col-1 {
+    width: 448px;
+
+    @include lg {
+      width: 100%;
+    }
+
+    @include xs {
+      margin-bottom: 60px;
+    }
+  }
+
+  .col-2 {
+    width: 344px;
+
+    @include lg {
+      width: 100%;
+    }
+
+    @include xs {
+      margin-bottom: 60px;
+    }
+  }
+
+  @include xs {
+    padding-top: 0;
+  }
+}
+
+.newsletter {
+  position: relative;
+
+  &__text {
+    margin-bottom: 30px;
+  }
+
+  &__field {
+    display: block;
+    border-bottom: 1px solid var(--color-gray);
+    padding-bottom: 12px;
+    width: 100%;
+  }
+
+  &__button {
+    position: absolute;
+    right: 0;
+    top: 4px;
+    display: block;
+    outline: none;
+    width: 30px;
+    height: 20px;
+    transition: 0.2s;
+    cursor: pointer;
+
+    svg {
+      fill: currentColor;
+      transition: fill 0.3s ease-in-out;
+
+      &:focus {
+        opacity: 0.59;
+      }
+
+      &:active {
+        stroke: var(--color-accent);
+        opacity: 1;
+      }
+
+      @include desktop {
+        &:hover {
+          opacity: 0.59;
+        }
+      }
+    }
+  }
+}
+
+input {
+  display: block;
+  outline: none;
+  border: none;
+  padding-right: 40px;
+  width: 100%;
+  height: 40px;
+  font: var(--fs-xs);
+
+  &::placeholder {
+    color: rgba(#454545, 0.5);
+  }
+}

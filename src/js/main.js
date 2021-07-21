@@ -7,6 +7,7 @@ import './components/sliders';
 import './components/cart-sidebar';
 import './components/product';
 import './components/burger';
+import './components/accordion';
 
 
 

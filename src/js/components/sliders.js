@@ -36,7 +36,7 @@ const featureSlider = new Swiper(vars.$mainFeatureSlider, {
     autoplayDisableOnInteraction: true,
     autoplay: {
         delay: 2500,
-    },    
+    },
     pagination: {
         el: '.feature__slider-pagination',
         clickable: true,
@@ -65,5 +65,7 @@ const recommSlider = new Swiper(vars.$productRecommSlider, {
         }
     }
 });
+
+
 
 // sliderOne.controller.control = [sliderTwo, sliderThree];

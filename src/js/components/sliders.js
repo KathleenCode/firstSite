@@ -4,9 +4,6 @@ import vars from '../_vars';
 
 const heroSlider = new Swiper(vars.$mainHeroSlider, {
     effect: 'fade',
-    // autoplay: {
-    //     delay: 2500,
-    // },  
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -46,11 +43,11 @@ const featureSlider = new Swiper(vars.$mainFeatureSlider, {
     },
 });
 
-const recommSlider = new Swiper(vars.$productRecommSlider, {
+
+const productSlider = new Swiper(vars.$productRecommSlider, {
     loop: true,
     slidesPerView: 2,
     spaceBetween: 5,
-    speed: 1000,
     autoplay: {
         delay: 2000,
     },
@@ -66,6 +63,26 @@ const recommSlider = new Swiper(vars.$productRecommSlider, {
     }
 });
 
+
+
+const catalogSlider = new Swiper(vars.$catalogViewedSlider, {
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 5,
+    autoplay: {
+        delay: 2000,
+    },
+    breakpoints: {
+        576: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+        },
+        768: {
+            slidesPerView: 5,
+            spaceBetween: 15,
+        }
+    }
+});
 
 
 // sliderOne.controller.control = [sliderTwo, sliderThree];

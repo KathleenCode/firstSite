@@ -1,13 +1,15 @@
 import './vendor/focus-visible.min.js';
 import './_vars';
 import './components/header';
-import './components/custom-select';
+import './components/selects';
 import './components/sliders';
-// import './components/gallery-slider';
-import './components/cart-sidebar';
-import './components/product';
+import './components/slider-gallery';
+import './components/cart';
+import './components/products';
 import './components/burger';
 import './components/accordion';
+// import './components/filter-catalog';
+// import './components/sort-catalog';
 
 
 

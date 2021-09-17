@@ -7,19 +7,23 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#111111">
-    <title>Product</title>
+    <title>Catalog</title>
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 
-<body class="product-page">
+<body class="catalog-page">
     <div class="site-container">
         @include('html/header-product.html')
         <main class="main">
-            <section class="product-info">    
-                    @include('html/product-info.html')     
+            <section class="catalog">
+                <div class="container container-narrow">
+                    <h1 class="visually-hidden">CAREMA catalog</h1>
+                    @include('html/catalog-top.html')
+                    @include('html/catalog-grid.html')
+                </div>
             </section>
-            <section class="product-recomm">
-                @include('html/product-recomm.html')
+            <section class="viewed">
+                @include('html/catalog-viewed.html')
             </section>
         </main>
         @include('html/footer.html')

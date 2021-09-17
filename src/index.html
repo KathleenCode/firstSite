@@ -15,12 +15,14 @@
     <div class="site-container">
         @include('html/header-home.html')
         <main class="main">
-            @include('html/hero.html')
-            @include('html/feature.html')
-            @include('html/collezione.html')
+            <section class="hero"> 
+                <h1 class="visually-hidden">CAREMA - best shop!</h1>
+                @include('html/hero.html')</section>
+            <section class="feature">@include('html/feature.html')</section>
+            <section class="collezione">@include('html/collezione.html')</section>
         </main>
         @include('html/footer.html')
-        @include('html/cart-sidebar.html')
+        @include('html/cart.html')
     </div>
     <script src="js/main.js"></script>
 </body>

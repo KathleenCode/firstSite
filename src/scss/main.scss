@@ -7,13 +7,19 @@
 // CUSTOM COMPONENTS STYLES
 @import "./components/header";
 @import "./components/nav";
+@import "./components/footer";
+@import "./components/cart";
+@import "./components/carousel";
+@import "./components/accordion";
+@import "./components/custom-select";
+
+// CUSTOM COMPONENTS STYLES HOME PAGE
 @import "./components/hero";
 @import "./components/feature";
 @import "./components/collezione";
-@import "./components/footer";
-@import "./components/cart";
 
 // CUSTOM COMPONENTS STYLES PRODUCT PAGE
-@import "./components/product-information";
-@import "./components/accordion";
-@import "./components/product-recommendation";
+@import "./components/product-page";
+
+// CUSTOM COMPONENTS STYLES CATALOG PAGE
+@import "./components/catalog-page";

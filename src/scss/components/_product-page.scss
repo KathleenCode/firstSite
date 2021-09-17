@@ -1,0 +1,135 @@
+.product-info {
+  padding: 150px 0 200px;
+
+  &__inner {
+    display: flex;
+
+    @include xs {
+      flex-direction: column;
+    }
+  }
+
+  &__left {
+    width: 60%;
+
+    @include xs {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  }
+
+  &__right {
+    margin-left: 15px;
+    width: 38%;
+
+    @include xs {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 3px;
+    font: var(--fs-l);
+  }
+
+  &__price {
+    display: inline-block;
+    margin-bottom: 20px;
+    font: var(--fs-l);
+  }
+
+  &__first-descr {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  &__second-descr {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  &__btn {
+    outline: none;
+    border: 1px solid var(--color-accent);
+    padding: 24px 0;
+    width: 100%;
+    text-align: center;
+    color: var(--color-white);
+    background-color: var(--color-accent);
+
+    &:active {
+      color: var(--color-accent);
+      background-color: transparent;
+    }
+  }
+
+  &__selects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+  &__select {
+    width: calc((100% - 20px) / 2);
+  }
+
+  &__instruction {
+    margin-bottom: 30px;
+  }
+
+  &__sizing-text {
+    width: 463px;
+
+    @include sm {
+      width: 100%;
+    }
+  }
+
+  @include xs {
+    padding: 100px 0 60px;
+  }
+}
+
+.gallery {
+  &__slider {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  &__slide {
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+
+    @include xs {
+      position: relative;
+      flex-shrink: 0;
+      margin-bottom: 0;
+      width: 100%;
+      height: 100%;
+      transition-property: transform;
+    }
+  }
+
+  &__swiper-wrapper {
+    flex-wrap: wrap;
+
+    @include xs {
+      flex-wrap: nowrap;
+    }
+  }
+}
+
+.product-recomm {
+  &__title {
+    margin-bottom: 140px;
+    text-align: center;
+
+    @include xs {
+      margin-bottom: 60px;
+      font-size: 22px;
+    }
+  }
+}

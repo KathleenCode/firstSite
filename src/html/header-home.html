@@ -9,16 +9,16 @@
                 </a>
             </div>
             <div class="header__menu">
-                <button class="header__burger burger btn-reset " aria-label="open menu" >
+                <button class="header__burger burger btn-reset " aria-label="open menu">
                     <span class="burger__line"></span>
                 </button>
                 <nav class="header__nav nav">
+                    <button class="nav__close btn-reset" aria-label="close menu">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#close"></use>
+                        </svg>
+                    </button>
                     <ul class="nav__list">
-                        <button class="nav__close btn-reset" aria-label="close menu">
-                            <svg>
-                                <use xlink:href="img/sprite.svg#close"></use>
-                            </svg>
-                        </button>
                         <li class="nav__item"><a class="nav__link" href="#">SWEATERS</a></li>
                         <li class="nav__item"><a class="nav__link" href="#">ACCESSORIES</a></li>
                         <li class="nav__item"><a class="nav__link" href="#">ABOUT</a></li>
@@ -26,7 +26,8 @@
                 </nav>
             </div>
             <div class="header__cart cart-header">
-                <button class="cart-header__btn btn-reset" aria-label="go to cart">CART(<span class="cart-header__count"></span>)</button>
+                <button class="cart-header__btn btn-reset" aria-label="go to cart">CART(<span
+                        class="cart-header__count">0</span>)</button>
             </div>
         </div>
     </div>

@@ -7,4 +7,4 @@ window.onscroll = function () {
   else {
     header.style.background = "transparent";
   }  
-}
+};

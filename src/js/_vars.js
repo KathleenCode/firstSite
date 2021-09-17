@@ -6,9 +6,9 @@ export default {
     $mainHeroSlider: document.querySelector('.hero__slider'),
     $mainFeatureSlider: document.querySelector('.feature__slider'),
     $productSlider: document.querySelector('.gallery__slider'),
-    $productRecommSlider: document.querySelector('.product-recomm__slider'),
-    $customSelect: document.querySelectorAll('.custom-select'),
+    $productRecommSlider: document.querySelector('.product-recomm__carousel-slider'),
+    $catalogViewedSlider: document.querySelector('.viewed__carousel-slider'),
     $burger: document.querySelector('.burger'),
     $nav: document.querySelector('.nav'),
-    $navClose: document.querySelector('.nav__close'),
+    $navClose: document.querySelector('.nav__close'), 
 }

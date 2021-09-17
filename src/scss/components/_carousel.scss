@@ -1,0 +1,43 @@
+.carousel {
+  &__slider {
+    overflow: hidden;
+    margin-bottom: 170px;
+
+    @include xs {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__slide {
+    width: 19%;
+  }
+}
+
+.card {
+  position: relative;
+
+  &__image {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    margin-bottom: 5px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  &__price {
+    font-weight: 600;
+  }
+
+  a {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+  }
+}

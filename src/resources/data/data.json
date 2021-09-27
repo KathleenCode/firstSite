@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "child": "child-1",
+    "category": "Dark",
     "title": "Lupetto in brown",
-    "price": 328,
+    "price": 388,
     "image": "./data/images/1.jpg",
     "gallery": [
       "./data/images/p1.jpg",
@@ -40,9 +40,9 @@
   },
   {
     "id": 2,
-    "child": "child-2",
+    "category": "Dark",
     "title": "Lupetto in brown",
-    "price": 328,
+    "price": 388,
     "image": "./data/images/2.jpg",
     "gallery": [
       "./data/images/p1.jpg",
@@ -79,44 +79,44 @@
   },
   {
     "id": 3,
-    "child": "child-3",
+    "category": "Light",
     "title": "Lupetto in brown",
-    "price": 328,
+    "price": 188,
     "image": "./data/images/3.jpg"
   },
   {
     "id": 4,
-    "child": "child-4",
+    "category": "Color",
     "title": "Lupetto in brown",
-    "price": 328,
+    "price": 118,
     "image": "./data/images/4.jpg"
   },
   {
     "id": 5,
-    "child": "child-5",
+    "category": "Color",
     "title": "Lupetto in brown",
     "price": 328,
     "image": "./data/images/5.jpg"
   },
   {
     "id": 6,
-    "child": "child-6",
+    "category": "Dark",
     "title": "Lupetto in brown",
-    "price": 328,
+    "price": 118,
     "image": "./data/images/6.jpg"
   },
   {
     "id": 7,
-    "child": "child-7",
+    "category": "Dark",
     "title": "Lupetto in brown",
-    "price": 328,
+    "price": 118,
     "image": "./data/images/7.jpg"
   },
   {
     "id": 8,
-    "child": "child-8",
+    "category": "Light",
     "title": "Lupetto in brown",
-    "price": 328,
+    "price": 118,
     "image": "./data/images/8.jpg",
     "gallery": [
       "./data/images/p1.jpg",

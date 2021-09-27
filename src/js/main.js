@@ -8,8 +8,8 @@ import './components/cart';
 import './components/products';
 import './components/burger';
 import './components/accordion';
-// import './components/filter-catalog';
-// import './components/sort-catalog';
+import './components/filter-catalog';
+
 
 
 

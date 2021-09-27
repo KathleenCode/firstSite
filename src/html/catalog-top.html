@@ -1,35 +1,37 @@
-<div class="container container-narrow">
-  <div class="catalog-top">
-    <div class="catalog-top__filter catalog-filter">
+<div class="catalog-top">
+  <div class="catalog-top__filter catalog-filter">
+    <ul class="catalog-filter__list">
+      <li class="catalog-filter__item">
+        <button class="btn-reset  catalog-filter__btn" data-filter="All">All</button>
+      </li>
+      <li class="catalog-filter__item">
+        <button class="btn-reset  catalog-filter__btn catalog-filter__btn--current" data-filter="Light">Light</button>
+      </li>
+      <li class="catalog-filter__item">
+        <button class="btn-reset  catalog-filter__btn" data-filter="Dark">Dark</button>
+      </li>
+      <li class="catalog-filter__item">
+        <button class="btn-reset  catalog-filter__btn" data-filter="Color">Color</button>
+      </li>
+    </ul>
 
-      <ul class="catalog-filter__list">
-        <li class="catalog-filter__item"><button class="btn-reset  catalog-filter__btn" data-filter="All">All</button>
-        </li>
-        <li class="catalog-filter__item"><button class="btn-reset  catalog-filter__btn catalog-filter__btn--current"
-            data-filter="Light">Light</button></li>
-        <li class="catalog-filter__item"><button class="btn-reset  catalog-filter__btn" data-filter="Dark">Dark</button>
-        </li>
+  </div>
+  <div class="catalog-top__select grid-select">
+    <div class="custom-select">
+      <button class="custom-select__field custom-select__field--grid btn-reset" aria-label="sort sweaters">
+        <span class="custom-select__title">SORT BY<span class="custom-select__text"></span></span>
+        <svg class="custom-select__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M3.51501 8.465L12 16.95L20.485 8.465L19.071 7.05L12 14.122L4.92901 7.05L3.51501 8.465Z"
+            fill="#2E3A59" />
+        </svg>
+      </button>
+      <ul class="custom-select__list custom-select__list--grid">
+        <li class="custom-select__item" data-value="latest">LATEST</li>
+        <li class="custom-select__item" data-value="price">PRICE</li>
+        <li class="custom-select__item" data-value="alphabet">ALPHABET</li>
       </ul>
-
-    </div>
-    <div class="catalog-top__select grid-select">
-      <div class="custom-select">
-        <button class="custom-select__field custom-select__field--grid btn-reset" aria-label="sort sweaters">
-          <span class="custom-select__title custom-select__title--grid">SORT BY</span>
-          <svg class="custom-select__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M3.51501 8.465L12 16.95L20.485 8.465L19.071 7.05L12 14.122L4.92901 7.05L3.51501 8.465Z"
-              fill="#2E3A59" />
-          </svg>
-        </button>
-        <ul class="custom-select__list custom-select__list--grid">
-          <li class="custom-select__item custom-select__item--grid" data-value="Sort by latest">LATEST</li>
-          <li class="custom-select__item custom-select__item--grid" data-value="Sort by price">PRICE</li>
-          <li class="custom-select__item custom-select__item--grid" data-value="Sort by alphabet">ALPHABET</li>
-        </ul>
-        <input type="text" name="custom-select-category" value="" class="custom-select__input-hidden">
-      </div>
+      <input type="text" name="custom-select-category" value="" class="custom-select__input-hidden">
     </div>
   </div>
 </div>
-

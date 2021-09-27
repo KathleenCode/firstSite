@@ -25,9 +25,6 @@ const normalPrice = (str) => {
   return String(str).replace(/\D/g, '');
 };
 
-const priceWithoutSpaces = (str) => {
-  return str.replace(/\s/g, '');
-};
 
 const plusFullPrice = (currentPrice) => {
   return price += currentPrice;
@@ -50,7 +47,6 @@ const loadCartData = (id = 1) => {
     .then((data) => {
       for (let dataItem of data) {
         if (dataItem.id == id) {
-          console.log(dataItem);
           cartSidebarList.insertAdjacentHTML('afterbegin',
             `<div class="cart-sidebar__item" data-id="${dataItem.id}">
                       <article class="cart-sidebar__product cart-product">
@@ -73,7 +69,7 @@ const loadCartData = (id = 1) => {
         }
       }
     })
-    .then((item) => {
+    .then((item) => {        
       plusFullPrice(item.price);
       printFullPrice();
 
@@ -130,7 +126,7 @@ const printQuantity = (num) => {
 };
 
 
-export {cartLogic};
+export { cartLogic };
 
 
 

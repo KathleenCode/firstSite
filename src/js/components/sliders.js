@@ -68,16 +68,16 @@ const productSlider = new Swiper(vars.$productRecommSlider, {
 const catalogSlider = new Swiper(vars.$catalogViewedSlider, {
     loop: true,
     slidesPerView: 2,
-    spaceBetween: 5,
+    spaceBetween: 20,
     autoplay: {
         delay: 2000,
     },
     breakpoints: {
-        576: {
+        992: {
             slidesPerView: 4,
             spaceBetween: 10,
         },
-        768: {
+        1200: {
             slidesPerView: 5,
             spaceBetween: 15,
         }

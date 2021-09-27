@@ -23,113 +23,128 @@
 
 .grid {
   display: flex;
-  flex: 0 1 auto;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: flex-start;
   margin-right: -10px;
   margin-left: -10px;
+}
 
-  &__item {
-    margin-right: 10px;
-    margin-bottom: 10vw;
-    margin-left: 10px;
+.grid__item-collezione {
+  margin-right: 10px;
+  margin-bottom: 10vw;
+  margin-left: 10px;
 
-    &:nth-child(1) {
-      flex-basis: calc(59% - 20px);
-      width: calc(59% - 20px);
-
-      @include sm {
-        flex-basis: calc(100% - 10px);
-        width: calc(100% - 10px);
-      }
-    }
-
-    &:nth-child(2) {
-      flex-basis: calc(18% - 20px);
-      margin-right: calc(18% + 10px);
-      width: calc(18% - 20px);
-
-      @include sm {
-        flex-basis: calc(50% - 10px);
-        margin-right: 5px;
-        width: calc(50% - 10px);
-      }
-    }
-
-    &:nth-child(3) {
-      flex-basis: calc(18% - 20px);
-      width: calc(18% - 20px);
-
-      @include sm {
-        flex-basis: calc(50% - 10px);
-        width: calc(50% - 10px);
-      }
-    }
-
-    &:nth-child(4) {
-      flex-basis: calc(18% - 20px);
-      width: calc(18% - 20px);
-
-      @include sm {
-        flex-basis: calc(50% - 10px);
-        width: calc(50% - 10px);
-      }
-    }
-
-    &:nth-child(5) {
-      flex-basis: calc(37% - 20px);
-      margin-left: calc(27% + 10px);
-      width: calc(37% - 20px);
-
-      @include sm {
-        flex-basis: calc(50% - 10px);
-        margin-left: 5px;
-        width: calc(50% - 10px);
-      }
-    }
-
-    &:nth-child(6) {
-      flex-basis: calc(37% - 20px);
-      width: calc(37% - 20px);
-
-      @include sm {
-        flex-basis: calc(50% - 10px);
-        width: calc(50% - 10px);
-      }
-    }
-
-    &:nth-child(7) {
-      flex-basis: calc(18% - 20px);
-      width: calc(18% - 20px);
-
-      @include sm {
-        flex-basis: calc(50% - 10px);
-        width: calc(50% - 10px);
-      }
-    }
-
-    &:nth-child(8) {
-      flex-basis: calc(18% - 20px);
-      margin-left: calc(27% + 10px);
-      width: calc(18% - 20px);
-
-      @include sm {
-        flex-basis: calc(50% - 10px);
-        margin-left: 5px;
-        width: calc(50% - 10px);
-      }
-    }
+  &:nth-child(1) {
+    flex-basis: calc(59% - 20px);
+    width: calc(59% - 20px);
 
     @include sm {
-      margin-right: 5px;
-      margin-bottom: 16vw;
-      margin-left: 5px;
+      flex-basis: calc(100% - 10px);
+      width: calc(100% - 10px);
     }
+  }
 
-    @include xs {
-      margin-bottom: 50px;
+  &:nth-child(2) {
+    flex-basis: calc(18% - 20px);
+    margin-right: calc(18% + 10px);
+    width: calc(18% - 20px);
+
+    @include sm {
+      flex-basis: calc(50% - 10px);
+      margin-right: 5px;
+      width: calc(50% - 10px);
     }
+  }
+
+  &:nth-child(3) {
+    flex-basis: calc(18% - 20px);
+    width: calc(18% - 20px);
+
+    @include sm {
+      flex-basis: calc(50% - 10px);
+      width: calc(50% - 10px);
+    }
+  }
+
+  &:nth-child(4) {
+    flex-basis: calc(18% - 20px);
+    width: calc(18% - 20px);
+
+    @include sm {
+      flex-basis: calc(50% - 10px);
+      width: calc(50% - 10px);
+    }
+  }
+
+  &:nth-child(5) {
+    flex-basis: calc(37% - 20px);
+    margin-left: calc(27% + 10px);
+    width: calc(37% - 20px);
+
+    @include sm {
+      flex-basis: calc(50% - 10px);
+      margin-left: 5px;
+      width: calc(50% - 10px);
+    }
+  }
+
+  &:nth-child(6) {
+    flex-basis: calc(37% - 20px);
+    width: calc(37% - 20px);
+
+    @include sm {
+      flex-basis: calc(50% - 10px);
+      width: calc(50% - 10px);
+    }
+  }
+
+  &:nth-child(7) {
+    flex-basis: calc(18% - 20px);
+    width: calc(18% - 20px);
+
+    @include sm {
+      flex-basis: calc(50% - 10px);
+      width: calc(50% - 10px);
+    }
+  }
+
+  &:nth-child(8) {
+    flex-basis: calc(18% - 20px);
+    margin-left: calc(27% + 10px);
+    width: calc(18% - 20px);
+
+    @include sm {
+      flex-basis: calc(50% - 10px);
+      margin-left: 5px;
+      width: calc(50% - 10px);
+    }
+  }
+
+  @include sm {
+    margin-right: 5px;
+    margin-bottom: 16vw;
+    margin-left: 5px;
+  }
+
+  @include xs {
+    margin-bottom: 50px;
+  }
+}
+
+.grid__item-catalog {
+  margin: 0 10px;
+  margin-bottom: 10vw;
+  width: calc((100% - 60px) / 3);
+  min-height: 300px;
+
+  &:not(:nth-child(-n + 6)) {
+    margin-bottom: 0;
+  }
+
+  @include lg {
+    margin-bottom: 16vw;
+    width: calc(50% - 20px);
   }
 }
 
@@ -249,3 +264,16 @@
     }
   }
 }
+
+// .product__img-catalog {
+//   height: 419px;
+
+//   @include sm {
+//     height: 338px;
+//   }
+
+//   @include xs {
+//     margin-bottom: 10px;
+//     height: 200px;
+//   }
+// }

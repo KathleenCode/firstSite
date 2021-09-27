@@ -14,7 +14,7 @@
       margin-bottom: 80px;
     }
 
-    @include xs {
+    @include sm {
       flex-direction: column;
       margin-bottom: 40px;
     }
@@ -51,23 +51,16 @@
 
   &__column {
     flex: 0 1 auto;
+    margin-bottom: 40px;
 
     @include lg {
       flex: 1 1 50%;
       margin-bottom: 80px;
       padding: 0 20px;
+    }
 
-      &:nth-last-child(-n + 2) {
-        margin-bottom: 0;
-
-        @include xs {
-          margin-bottom: 60px;
-        }
-      }
-
-      @include xs {
-        padding: 0;
-      }
+    @include sm {
+      padding: 0;
     }
   }
 
